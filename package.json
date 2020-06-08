@@ -1,0 +1,23 @@
+{
+  "name": "textlint-plugin-typescript",
+  "version": "0.0.1",
+  "description": "textlint plugin for typescript",
+  "main": "dest/index.js",
+  "author": "ktkn304",
+  "license": "MIT",
+  "files": [
+    "dest/"
+  ],
+  "dependencies": {
+    "@textlint/ast-node-types": "^4.2.5",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "@textlint/kernel": "^3.2.1"
+  },
+  "scripts": {
+    "watch": "tsc --watch",
+    "build": "tsc",
+    "install": "test -d './dest' || npm run build"
+  }
+}
